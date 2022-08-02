@@ -1,0 +1,17 @@
+.header_container{
+    background: #1E1E1E;
+    height: 50px;
+    .header_block{
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        h1{
+            font-family: 'Roboto';
+            font-weight: 500;
+            font-size: 32px;
+            color: #E3E6EC;
+                        
+        }
+    }
+}
