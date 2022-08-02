@@ -6,8 +6,8 @@ import { HeaderComponent } from './header/header.component';
 
 const routes: Routes = [
   { path: '', component: ChannelPageComponent },
-  { path: '/client', component: ClientPageComponent },
-  { path: '/header', component: HeaderComponent },
+  { path: 'client', component: ClientPageComponent },
+  { path: 'header', component: HeaderComponent },
 ];
 
 @NgModule({
