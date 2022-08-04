@@ -1,0 +1,180 @@
+
+.channelAdd_container{
+    padding: 0 10px;
+    .channelAdd_block{
+        max-width: 1200px;
+        margin: 0 auto;
+        .transition_block{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 400px;
+            margin-top: 30px;
+            .back_button{
+                button{
+                    background: #D1D1D1;
+                    border-radius: 8px;
+                    font-family: 'Roboto';
+                    font-weight: 400;
+                    font-size: 20px;
+                    color: #202020;
+                    width: 200px;
+                    height: 45px;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                    &:active{
+                        transform: scale(.9);
+                    }
+                    
+                }
+            }
+            .save_button{
+                button{
+                    background: #EA3E2A;
+                    border-radius: 8px;
+                    font-family: 'Roboto';
+                    font-weight: 400;
+                    font-size: 20px;
+                    color: #ffffff;
+                    width: 150px;
+                    height: 45px;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                    &:active{
+                        transform: scale(.9);
+                    }
+                }
+            }
+        }
+        .title_form{
+            margin-top: 40px;
+            h1{
+                font-family: 'Roboto';
+                font-weight: 400;
+                font-size: 32px;
+                color: #000000;
+                
+            }
+        }
+        form{
+            .name{
+                display: flex;
+                align-items: center;
+                gap: 242px;
+                border-bottom: 1px solid #A7A7A7;
+                margin-top: 20px;
+                padding-bottom: 10px; 
+                h2{
+                    font-family: 'Roboto';
+                    font-weight: 400;
+                    font-size: 20px;
+                    color: #000000;
+                }
+                input{
+                    width: 200px;
+                    height: 25px;
+                    // margin-bottom: 5px;                
+                }
+            }
+
+            .main{
+                display: flex;
+                align-items: center;
+                gap: 103px;
+                border-bottom: 1px solid #A7A7A7;
+                margin-top: 20px;
+                padding-bottom: 10px; 
+                h2{
+                    font-family: 'Roboto';
+                    font-weight: 400;
+                    font-size: 20px;
+                    color: #000000;
+                }
+                .main_items{
+                display: flex;
+                align-items: center;
+                label{
+                    background: #D1D1D1;
+                    border-radius: 2px;
+                    width: 150px;
+                    height: 25px;
+                    font-family: 'Roboto';
+                    font-weight: 300;
+                    font-size: 14px;
+                    color: #000000;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                input[type=file]{
+                     display: none;        
+                }
+            }
+            h1{
+                margin-left: 5px;
+                font-size: 13px;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 100;
+            }
+        }
+            }
+ 
+        }
+           
+        
+       .general_block{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 200px;
+        .delet_block{
+            button{
+                background: #B5B4B4;
+                border-radius: 8px;
+                width: 130px;
+                height: 45px;
+                font-family: 'Roboto';
+                font-weight: 500;
+                font-size: 18px;
+                color: #000000;
+                border: none;
+                outline: none;
+                &:active{
+                    transform: scale(.9);
+                }
+            }
+        }
+        .send_button{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            button{
+                background: #F39387;
+                border-radius: 8px;
+                font-family : 'Roboto';
+                font-weight: 500;
+                font-size: 18px;
+                color: #FFFFFF;  
+                border: none;
+                outline: none;
+                height: 45px;
+                cursor: pointer;
+                &:active{
+                    transform: scale(.9);
+                } 
+                &:nth-child(1){
+                    width: 300px;
+                    
+                }             
+                &:nth-child(2){
+                    width: 100px;
+                    background: #EA3E2A;
+                }             
+                          
+            }
+        }
+       } 
+    }
+}

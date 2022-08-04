@@ -1,0 +1,90 @@
+<app-header></app-header>
+<div class="channelAdd_container">
+  <div class="channelAdd_block">
+    <div class="transition_block">
+      <div class="back_button">
+        <button routerLink="/">Вернуться к списку</button>
+      </div>
+      <div class="save_button">
+        <button>Сохранить</button>
+      </div>
+    </div>
+    <div class="title_form">
+      <h1>Добавление канала</h1>
+    </div>
+    <form [formGroup]="channelAddForm">
+      <div class="id">
+        <h2>ID:</h2>
+        <input type="text" />
+      </div>
+
+      <div class="name">
+        <h2>Название:</h2>
+        <input type="text" />
+      </div>
+
+      <div class="cotegory">
+        <h2>Категория:</h2>
+     <div class="cotegory_item">
+        <select name="" id="">
+          <option value=""></option>
+        </select>
+        <i class="fas fa-plus" routerLink="/addCotegory"></i>
+    </div>
+      </div>
+
+      <div class="tarrif">
+        <h2>Тариф:</h2>
+        <select name="" id="">
+          <option value=""></option>
+        </select>
+      </div>
+
+      <div class="EPG">
+        <h2>EPG:</h2>
+        <input type="text" />
+      </div>
+
+      <div class="main">
+        <h2>Главная иконка (500х500):</h2>
+        <div class="main_items">
+          <label>
+            Выбрать файл
+            <input type="file" id="file-input" />
+          </label>
+          <h1>Файл не выбран</h1>
+        </div>
+      </div>
+      <div class="img">
+        <h2>Иконка (120х91):</h2>
+       <div class="img_item">
+        <label>
+          Выбрать файл
+          <input type="file" id="file-input" />
+        </label>
+        <h1>Файл не выбран</h1>
+    </div>
+      </div>
+      <div class="icon">
+        <h2>Иконка (40х40):</h2>
+    <div class="icon_item">
+        <label>
+            Выбрать файл
+            <input type="file" id="file-input" />
+          </label>
+        <h1>Файл не выбран</h1>
+    </div>
+      </div>
+    </form>
+    <div class="general_block">
+      <div class="delet_block">
+        <button>Удалить</button>
+      </div>
+      <div class="send_button">
+        <button>Сохранить и продолжить редактирование</button>
+        <button>Сохранить и добавить другой объект</button>
+        <button>Сохранить</button>
+      </div>
+    </div>
+  </div>
+</div>

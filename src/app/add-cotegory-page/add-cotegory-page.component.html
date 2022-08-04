@@ -1,0 +1,42 @@
+<app-header></app-header>
+<div class="channelAdd_container">
+  <div class="channelAdd_block">
+    <div class="transition_block">
+      <div class="back_button">
+        <button routerLink="/">Вернуться к списку</button>
+      </div>
+      <div class="save_button">
+        <button>Сохранить</button>
+      </div>
+    </div>
+    <div class="title_form">
+      <h1>Добавление котегории</h1>
+    </div>
+    <form [formGroup]="addCotegoryForm">
+      <div class="name">
+        <h2>Название:</h2>
+        <input type="text" formControlName="name">
+      </div>
+      <div class="main">
+        <h2>Главная иконка (500х500):</h2>
+        <div class="main_items">
+          <label>
+            Выбрать файл
+            <input type="file" id="file-input" formControlName="main">
+          </label>
+          <h1>Файл не выбран</h1>
+        </div>
+      </div>
+    </form>
+    <div class="general_block">
+      <div class="delet_block">
+        <button>Удалить</button>
+      </div>
+      <div class="send_button">
+        <button>Сохранить и добавить другой объект</button>
+        <button>Сохранить</button>
+      </div>
+    </div>
+  </div>
+</div>
+

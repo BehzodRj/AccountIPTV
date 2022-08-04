@@ -1,0 +1,89 @@
+.channel_container{
+    .channel_block{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 10px;
+        .general_block{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 30px;
+            .search_block{
+                display: flex;
+                align-items: center;
+                border: 2.51872px solid #FF4949;
+                border-radius: 20.9893px;
+                padding: 5px 10px;
+                img{
+                    cursor: pointer;
+                    &:active{
+                        transform: scale(.9);
+                    }
+                }
+                input{
+                    border: none;
+                    outline: none;
+                    margin-left: 5px;
+                }
+            }
+            .add_button{
+                button{
+                    background: #EA3E2A;
+                    border-radius: 8px;
+                    width: 150px;
+                    height: 45px;
+                    outline: none;
+                    border: none;
+                    font-family: 'Roboto';
+                    font-weight: 600;
+                    font-size: 20px;
+                    color: #FFFFFF;
+                    cursor: pointer;
+                    &:active{
+                        transform: scale(.9);
+                    }
+                }
+            }
+        }
+        .channel_item{
+            margin-top: 50px;
+            
+            table{
+                width: 100%;
+              thead{
+                tr{
+                    th{
+                        font-family: 'Roboto';
+                        font-weight: 400;
+                        font-size: 20px;
+                        color: #000000; 
+                        text-align: start;
+
+                        .fa-chevron-down {
+                            font-size: 13px;
+                            transform: translateY(-2px);
+                        }
+                    }
+                }
+              }  
+              tbody{
+                margin-top: 10px;
+
+               tr{
+                &:nth-child(even) {
+                    background-color: lightgray;
+                }
+
+                td{
+                    font-family: 'Roboto';
+                    font-weight: 300;
+                    font-size: 20px;
+                    color: #000000;
+                    padding: 10px 0;
+                }
+               }
+              }
+            }
+        }
+    }
+}
