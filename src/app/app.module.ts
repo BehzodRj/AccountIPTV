@@ -10,6 +10,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { ChannelAddPageComponent } from './channel-add-page/channel-add-page.component';
 import { AddCotegoryPageComponent } from './add-cotegory-page/add-cotegory-page.component';
 import { EditingChannalPageComponent } from './editing-channal-page/editing-channal-page.component';
+import { EditCategoryPageComponent } from './edit-category-page/edit-category-page.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { EditingChannalPageComponent } from './editing-channal-page/editing-chan
     HeaderComponent,
     ChannelAddPageComponent,
     AddCotegoryPageComponent,
-    EditingChannalPageComponent
+    EditingChannalPageComponent,
+    EditCategoryPageComponent
   ],
   imports: [
     BrowserModule,
