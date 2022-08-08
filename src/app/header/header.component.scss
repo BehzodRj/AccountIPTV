@@ -7,14 +7,18 @@
         display: flex;
         align-items: center;
         h1{
-            font-family: 'Roboto';
+            font-family: 'Roboto', sans-serif;
             font-weight: 500;
             font-size: 24px;
-            color: #E3E6EC; 
+            color: #E3E6EC;
             cursor: pointer;
             &:last-child{
                 margin-left: 10px;
-            }     
+            }
+        }
+        
+        .active {
+            color: #EA3E2A;
         }
     }
 }
