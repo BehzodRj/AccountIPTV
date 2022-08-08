@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AddClientPageComponent } from './add-client-page/add-client-page.component';
 import { AddCotegoryPageComponent } from './add-cotegory-page/add-cotegory-page.component';
 import { AuthPageComponent } from './auth-page/auth-page.component';
 import { ChannelAddPageComponent } from './channel-add-page/channel-add-page.component';
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'addCategory', component: AddCotegoryPageComponent },
   { path: 'editCategory', component: EditCategoryPageComponent },
   { path: 'client', component: ClientPageComponent },
+  { path: 'addclient', component:  AddClientPageComponent},
 ];
 
 @NgModule({

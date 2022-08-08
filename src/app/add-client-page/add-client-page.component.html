@@ -1,0 +1,57 @@
+<app-header></app-header>
+<div class="channelAdd_container">
+  <div class="channelAdd_block">
+    <div class="transition_block">
+      <div class="back_button">
+        <button routerLink="/client">Вернуться к списку</button>
+      </div>
+      <div class="save_button">
+        <button>Сохранить</button>
+      </div>
+    </div>
+    <div class="title_form">
+      <h1>Добавление клиента </h1>
+    </div>
+    <form [formGroup]="editingForm">
+      <div class="login">
+        <h2>Логин:</h2>
+        <input type="text" formControlName="id">
+      </div>
+
+      <div class="personalAccount">
+        <h2>Лицевой счет:</h2>
+        <input type="text" formControlName="name">
+      </div>
+
+      <div class="password">
+        <h2>Пароль:</h2>
+        <input type="password" >
+      </div>
+
+      <div class="tarrif">
+        <h2>Тариф:</h2>
+        <select name="" id="" formControlName="tarrif">
+          <option value=""></option>
+        </select>
+      </div>
+
+      <div class="balance">
+        <h2>Баланс:</h2>
+        <input type="text" formControlName="EPG">
+      </div>
+
+      
+    </form>
+    <div class="general_block">
+      <div class="delet_block">
+        <button>Удалить</button>
+      </div>
+      <div class="send_button">
+        <button>Сохранить и продолжить редактирование</button>
+        <button>Сохранить и добавить другой объект</button>
+        <button>Сохранить</button>
+      </div>
+    </div>
+  </div>
+</div>
+

@@ -12,6 +12,7 @@ import { AddCotegoryPageComponent } from './add-cotegory-page/add-cotegory-page.
 import { EditingChannalPageComponent } from './editing-channal-page/editing-channal-page.component';
 import { EditCategoryPageComponent } from './edit-category-page/edit-category-page.component';
 import { AuthPageComponent } from './auth-page/auth-page.component';
+import { AddClientPageComponent } from './add-client-page/add-client-page.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { AuthPageComponent } from './auth-page/auth-page.component';
     AddCotegoryPageComponent,
     EditingChannalPageComponent,
     EditCategoryPageComponent,
-    AuthPageComponent
+    AuthPageComponent,
+    AddClientPageComponent
   ],
   imports: [
     BrowserModule,
