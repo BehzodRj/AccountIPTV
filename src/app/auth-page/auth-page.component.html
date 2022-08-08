@@ -3,10 +3,10 @@
         <div class="auth_text">
             <h1>Вход</h1>
         </div>
-        <form>
-            <input type="text">
-            <input type="password">
-            <button routerLink="/channel">Войти</button>
+        <form [formGroup]="authForm">
+            <input type="text" placeholder="Аккаунт ID" formControlName="account_id">
+            <input type="password" placeholder="Пароль" formControlName="password">
+            <button (click)="logIn()">Войти</button>
         </form>
     </div>
 </div>
