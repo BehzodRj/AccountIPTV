@@ -11,6 +11,7 @@ import { ChannelAddPageComponent } from './channel-add-page/channel-add-page.com
 import { AddCotegoryPageComponent } from './add-cotegory-page/add-cotegory-page.component';
 import { EditingChannalPageComponent } from './editing-channal-page/editing-channal-page.component';
 import { EditCategoryPageComponent } from './edit-category-page/edit-category-page.component';
+import { AuthPageComponent } from './auth-page/auth-page.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { EditCategoryPageComponent } from './edit-category-page/edit-category-pa
     ChannelAddPageComponent,
     AddCotegoryPageComponent,
     EditingChannalPageComponent,
-    EditCategoryPageComponent
+    EditCategoryPageComponent,
+    AuthPageComponent
   ],
   imports: [
     BrowserModule,
