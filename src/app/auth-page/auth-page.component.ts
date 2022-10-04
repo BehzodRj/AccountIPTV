@@ -16,15 +16,20 @@ export class AuthPageComponent implements OnInit {
   ngOnInit() {
     this.authForm = new FormGroup({
       account_id: new FormControl('', Validators.required),
-      password: new FormControl('', Validators.required)
+      password: new FormControl('', [Validators.required, Validators.minLength(4)])
     })
+
+    if( localStorage.getItem('access_token') ) {
+      this.router.navigate(['/channel'])
+    }
   }
 
   logIn() {
     const authFormData = {...this.authForm.value}
-    this.request.authRequest(authFormData.account_id, authFormData.password).subscribe(response => {
+    this.request.authRequest(authFormData.account_id.toString(), authFormData.password).subscribe( (response: any) => {
       console.log(response);
-      // this.router.navigate(['/channel'])
+      localStorage.setItem('access_token', response.access_token)
+      this.router.navigate(['/channel'])
     }, error => {
       alert(error.error.error)
     })

@@ -4,9 +4,9 @@
             <h1>Вход</h1>
         </div>
         <form [formGroup]="authForm">
-            <input type="text" placeholder="Аккаунт ID" formControlName="account_id">
+            <input type="number" placeholder="Аккаунт ID" formControlName="account_id">
             <input type="password" placeholder="Пароль" formControlName="password">
-            <button (click)="logIn()">Войти</button>
+            <button [disabled]="authForm.invalid" [ngStyle]="{opacity: authForm.invalid ? '0.6' : '1'}" (click)="logIn()">Войти</button>
         </form>
     </div>
 </div>

@@ -30,7 +30,6 @@ export class requestsService {
     if(error.status == 401) {
       this.refreshTokenRequest().subscribe( (response: any) => {
         localStorage.setItem('access_token', response.access_token)
-        localStorage.setItem('refresh_token', response.refresh_token)
         location.reload()
       }, error => {
         localStorage.clear()
